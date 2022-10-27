@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" />
+
+
+</head>
+
+<style>
+  .card-header {
+    border-radius: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+  }
+
+  .table-striped {
+
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+  }
+
+  .card-body {
+    font-family: 'Times New Roman', Times, serif;
+  }
+</style>
+
+
+<body class="d-flex">
+  <div class="col-8">
+
+    <h1>
+
+
+      <img class="HGDlR black" src="//st.mngbcn.com/images/headerNew/logos/mango.svg" alt="MANGO">
+    </h1>
+    <div class="col-12 d-flex row">
+      <div class="card col-3 ms-5 mt-4 border">
+        <img src="../Public/js/image/kemer1.jpg" alt="" />
+        <div class="card-body">
+          <h5 class="card-title">Mango Oval Tokalı Kemer</h5>
+          <p class="card-text">200 TL</p>
+          <button class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto" id="urun-1" onclick="add(0)">
+
+            Ekle
+          </button>
+        </div>
+      </div>
+      <div class="card col-3 ms-5 mt-4 border">
+        <img src="../Public/js/image/ayakkabı.jpg" alt="" />
+        <div class="card-body">
+          <h5 class="card-title">Mango Asimetrik Stiletto Ayakkabı</h5>
+          <p class="card-text">560 TL
+          </p>
+          <button class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto" id="urun-2" onclick="add(1)">
+
+            Ekle
+          </button>
+        </div>
+      </div>
+      <div class="card col-3 ms-5 mt-4 border">
+        <img src="../Public/js/image/cüzdan.jpg" alt="" />
+        <div class="card-body">
+          <h5 class="card-title">Mango Kapitone Kot Kartlık</h5>
+          <p class="card-text">160 TL</p>
+          <button class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto" id="urun-3" onclick="add(2)">
+
+            Ekle
+          </button>
+
+        </div>
+      </div>
+      <div class="card col-3 ms-5 mt-4 border">
+        <img src="../Public/js/image/üst.jpg" alt="" />
+        <div class="card-body">
+          <h5 class="card-title">
+            Mango Pamuklu Çizgili Tişört
+          </h5>
+          <p class="card-text">260 TL</p>
+          <button class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto" id="urun-4" onclick="add(3)">
+
+            Ekle
+          </button>
+        </div>
+      </div>
+      <div class="card col-3 ms-5 mt-4 border">
+        <img src="../Public/js/image/topuklu.jpg" alt="" />
+        <div class="card-body">
+          <h5 class="card-title">Mango Bilekten Bağlamalı Sandalet</h5>
+          <p class="card-text">560 TL</p>
+          <button class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto" id="ekle-5" onclick="add(4)">
+
+            Ekle
+          </button>
+        </div>
+      </div>
+      <div class="card col-3 ms-5 mt-4 border ">
+        <img src="../Public/js/image/canta.jpg" alt="" />
+        <div class="card-body">
+          <h5 class="card-title">Mango Çapraz Çanta</h5>
+          <p class="card-text">380 TL
+          </p>
+          <button class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto" id="ekle-6" onclick="add(5)">
+
+            Ekle
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 d-flex row">
+      <div class="card col-3 ms-5 mt-4 border">
+        <img src="../Public/js/image/bileklik.jpg" alt="" />
+        <div class="card-body">
+          <h5 class="card-title">Mango Metal Bileklik</h5>
+          <p class="card-text">200 TL
+          </p>
+          <button class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto" id="urun-7" onclick="add(6)">
+
+            Ekle
+          </button>
+        </div>
+      </div>
+      <div class="card col-3 ms-5 mt-4 border">
+        <img src="../Public/js/image/tisort.jpg" alt="" />
+        <div class="card-body">
+          <h5 class="card-title">Mango Gündelik Koton Tişört</h5>
+          <p class="card-text">100 TL</p>
+          <button class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto" id="urun-8" onclick="add(7)">
+
+            Ekle
+          </button>
+        </div>
+      </div>
+      <div class="card col-3 ms-5 mt-4 border">
+        <img src="../Public/js/image/sandalet.jpg" alt="" />
+        <div class="card-body">
+          <h5 class="card-title">Mango Dişli Platform Topuklu Sandalet</h5>
+          <p class="card-text">400 TL</p>
+          <button class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto" id="urun-9" onclick="add(8)">
+
+            Ekle
+          </button>
+        </div>
+      </div>
+      <div class="card col-3 ms-5 mt-4 border">
+        <img src="../Public/js/image/kot.jpg" alt="" />
+        <div class="card-body">
+          <h5 class="card-title">
+            Mango Yüksek Belli Mom Jean
+          </h5>
+          <p class="card-text">560 TL</p>
+          <button class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto" id="urun-10" onclick="add(9)">
+
+            Ekle
+          </button>
+        </div>
+      </div>
+      <div class="card col-3 ms-5 mt-4 border">
+        <img src="../Public/js/image/elbise.jpg" alt="" />
+        <div class="card-body">
+          <h5 class="card-title">Mango Çiçekli Elbise</h5>
+          <p class="card-text">200 TL</p>
+          <button class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto" id="ekle-11" onclick="add(10)">
+
+            Ekle
+          </button>
+        </div>
+      </div>
+      <div class="card col-3 ms-5 mt-4 border">
+        <img src="../Public/js/image/pembe.jpg" alt="" />
+        <div class="card-body">
+          <h5 class="card-title">Mango Zincirli Kapitone Çanta</h5>
+          <p class="card-text">500 TL</p>
+          <button class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto" id="ekle-12" onclick="add(11)">
+
+            Ekle
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="col-4">
+    <table class="table table-striped">
+
+      <center>
+        <h4>SEPET</h4>
+      </center>
+      <div class="col-12 d-flex mt-1 justify-content-center">
+        <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#directory"
+          onclick="modalShow(event)">
+          Ürün Ekle
+        </button>
+      </div>
+      <div class="modal fade" id="directory" tabindex="-1" role="dialog" aria-labelledby="directory-modal-label"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="directory-modal-label">ÜRÜN EKLE</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="form-group row">
+                  <label for="input-name" class="col-sm-2
+                                    col-form-label">Ürün Adı</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="input-name">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="input-
+                                price" class="col-sm-2
+                                    col-form-label">Fiyatı</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="input-price">
+                  </div>
+                </div>
+                <div class="input-group">
+                  <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
+                    aria-label="Upload">
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Kapat</button>
+
+
+                  <button type="button" id="islemler" onclick="save(event)"
+                    class="btn btn-outline-success">Ekle</button>
+                </div>
+              </form>
+
+            </div>
+
+            <thead>
+              <tr>
+                <th scope="col">Adı</th>
+                <th scope="col">Fiyat</th>
+                <th scope="col">Adet</th>
+                <th scope="col">Toplam</th>
+              </tr>
+            </thead>
+
+            <tbody id="table-people">
+              <td colspan="7" id="no-product">
+                <center>Ürün Bulunamıyor</center>
+              </td>
+            </tbody>
+    </table>
+
+    <p>toplam tutar:<span id="total-amount">0</span></p>
+  </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="../public/js/script.js" type></script>
+</body>
+
+</html>
